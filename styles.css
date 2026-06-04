@@ -111,6 +111,10 @@ h1 {
   letter-spacing: 0;
 }
 
+.hero__title {
+  font-size: clamp(2rem, 4.6vw, 4.2rem);
+}
+
 h2 {
   margin: 0;
   font-size: clamp(1.8rem, 3vw, 2.8rem);
@@ -309,7 +313,8 @@ h3 {
   color: var(--muted);
 }
 
-.contact-section {
+.contact-section,
+.friend-section {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: end;
@@ -322,14 +327,16 @@ h3 {
   color: var(--muted);
 }
 
-.contact-links {
+.contact-links,
+.friend-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 10px;
 }
 
-.contact-links a {
+.contact-links a,
+.friend-links a {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.48);
@@ -337,7 +344,8 @@ h3 {
   font-weight: 800;
 }
 
-.contact-links a:hover {
+.contact-links a:hover,
+.friend-links a:hover {
   border-color: var(--primary);
   color: var(--primary);
 }
@@ -370,11 +378,13 @@ h3 {
   }
 
   .project-grid,
-  .contact-section {
+  .contact-section,
+  .friend-section {
     grid-template-columns: 1fr;
   }
 
-  .contact-links {
+  .contact-links,
+  .friend-links {
     justify-content: flex-start;
   }
 }
@@ -388,6 +398,10 @@ h3 {
 
   h1 {
     font-size: 2.4rem;
+  }
+
+  .hero__title {
+    font-size: 2.05rem;
   }
 
   .facts div,
