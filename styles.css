@@ -357,6 +357,37 @@ h3 {
   font-size: 0.92rem;
 }
 
+.footer p {
+  margin: 0;
+}
+
+.beian-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 18px;
+  margin-top: 10px;
+  color: #7a8491;
+  font-size: 0.82rem;
+}
+
+.beian-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.beian-links a:hover {
+  color: var(--primary);
+}
+
+.beian-links img {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
 @media (max-width: 820px) {
   .site-header {
     align-items: flex-start;
